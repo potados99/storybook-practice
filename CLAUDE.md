@@ -8,14 +8,16 @@ Storybook 학습 및 실습을 위한 프로젝트.
 - **패키지 매니저**: pnpm (`npm`, `yarn` 사용 금지)
 - **프레임워크**: React 19 + TypeScript
 - **빌드 도구**: Vite 7
-- **린트**: ESLint 9 (flat config)
+- **린트/포맷**: Biome (ESLint, Prettier 사용하지 않음)
 
 ## 주요 명령어
 
 ```bash
 pnpm dev        # 개발 서버 실행
 pnpm build      # 타입 체크 + 빌드 (tsc -b && vite build)
-pnpm lint       # ESLint 실행
+pnpm lint       # Biome 린트+포맷 체크
+pnpm lint:fix   # Biome 자동 수정
+pnpm format     # Biome 포맷만 적용
 pnpm preview    # 빌드 결과 미리보기
 ```
 
