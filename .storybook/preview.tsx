@@ -7,7 +7,12 @@ const preview: Preview = {
     (Story) => (
       <>
         <Story />
-        <Agentation />
+        <Agentation
+          endpoint="http://localhost:4747"
+          onSessionCreated={(sessionId) => {
+            console.log("Session started:", sessionId);
+          }}
+        />
       </>
     ),
   ],
