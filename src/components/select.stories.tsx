@@ -52,6 +52,23 @@ export const Controlled: Story = {
 
 // Interactions 자동 테스트
 export const SelectInteraction: Story = {
+  render: (args) => {
+    const [value, setValue] = useState("");
+    return (
+      <div className="flex flex-col gap-2">
+        <Select
+          {...args}
+          options={fruitOptions}
+          value={value}
+          onChange={(v) => {
+            setValue(v);
+            args.onChange?.(v);
+          }}
+        />
+        <p className="text-sm text-gray-500">선택된 값: {value || "없음"}</p>
+      </div>
+    );
+  },
   play: async ({ canvasElement, args }) => {
     const canvas = within(canvasElement);
     const select = canvas.getByRole("combobox");
