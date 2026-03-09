@@ -44,5 +44,5 @@ public/          # 퍼블릭 에셋
 ## 컨벤션
 
 - 커밋 메시지: Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:` 등)
-- 컴포넌트 파일: PascalCase (예: `Button.tsx`)
+- 컴포넌트 파일: kebab-case (예: `button.tsx`, `date-picker.tsx`)
 - 유틸/훅 파일: camelCase (예: `useCounter.ts`)
