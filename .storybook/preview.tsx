@@ -1,7 +1,16 @@
 import type { Preview } from "@storybook/react-vite";
+import { Agentation } from "agentation";
 import "../src/index.css";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <>
+        <Story />
+        <Agentation />
+      </>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {
