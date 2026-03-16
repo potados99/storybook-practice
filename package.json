@@ -1,46 +1,14 @@
 {
-  "name": "storybook-practice",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "biome check .",
-    "lint:fix": "biome check --fix .",
-    "format": "biome format --fix .",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.5",
-    "@chromatic-com/storybook": "^5.0.1",
-    "@storybook/addon-a11y": "^10.2.16",
-    "@storybook/addon-docs": "^10.2.16",
-    "@storybook/addon-onboarding": "^10.2.16",
-    "@storybook/addon-vitest": "^10.2.16",
-    "@storybook/react-vite": "^10.2.16",
-    "@tailwindcss/vite": "^4.2.1",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react-swc": "^4.2.3",
-    "@vitest/browser-playwright": "^4.0.18",
-    "@vitest/coverage-v8": "^4.0.18",
-    "agentation": "^2.3.0",
-    "playwright": "^1.58.2",
-    "storybook": "^10.2.16",
-    "tailwindcss": "^4.2.1",
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1",
-    "vitest": "^4.0.18"
+    "format": "biome check --write --unsafe",
+    "check": "biome check"
   },
   "packageManager": "pnpm@10.30.3",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "typescript": "~5.9.3"
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@swc/core",
