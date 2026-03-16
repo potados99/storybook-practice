@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "expo start",
+    "storybook": "storybook dev -p 6007"
+  },
+  "dependencies": {
+    "expo": "~55.0.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-native": "0.83.2",
+    "react-native-unistyles": "3.0.24",
+    "react-native-web": "~0.20.0"
+  },
+  "devDependencies": {
+    "@storybook/react-native-web-vite": "^10.2.16",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "babel-preset-expo": "~55.0.0",
+    "storybook": "^10.2.16",
+    "vite": "^7.3.1"
+  }
+}
