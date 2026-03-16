@@ -13,6 +13,11 @@ dist-ssr
 storybook-static
 *.local
 
+# Expo / React Native
+ios/
+android/
+.expo/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

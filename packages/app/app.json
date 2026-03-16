@@ -3,6 +3,21 @@
     "name": "storybook-app",
     "slug": "storybook-app",
     "version": "0.0.1",
-    "platforms": ["ios", "android"]
+    "scheme": "storybook-app",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "./src/app"
+        }
+      ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.anonymous.storybook-app"
+    }
   }
 }
