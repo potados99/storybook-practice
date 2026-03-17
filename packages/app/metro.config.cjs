@@ -7,4 +7,8 @@ const config = getDefaultConfig(projectRoot);
 module.exports = withStorybook(config, {
   enabled: process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true",
   configPath: ".rnstorybook",
+  websockets: {
+    port: 7007,
+    host: "localhost",
+  },
 });

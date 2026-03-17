@@ -6,4 +6,7 @@ export default view.getStorybookUI({
     getItem: AsyncStorage.getItem,
     setItem: AsyncStorage.setItem,
   },
+  enableWebsockets: true,
+  host: "localhost",
+  port: 7007,
 });

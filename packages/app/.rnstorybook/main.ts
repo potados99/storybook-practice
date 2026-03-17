@@ -5,7 +5,12 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-ondevice-controls",
     "@storybook/addon-ondevice-actions",
+    "@storybook/addon-react-native-server",
   ],
+  reactNativeServerOptions: {
+    host: "localhost",
+    port: 7007,
+  },
 };
 
 export default config;
