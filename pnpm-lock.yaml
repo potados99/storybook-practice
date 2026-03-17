@@ -59,6 +59,9 @@ importers:
       react-native:
         specifier: 0.83.2
         version: 0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4)
+      react-native-grab:
+        specifier: ^1.1.0
+        version: 1.1.0(@react-navigation/native@7.1.33(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4))(expo-dev-menu@55.0.14(expo@55.0.6))(expo-router@55.0.5)(metro-config@0.83.5)(react-native-screens@4.23.0(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4))(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
       react-native-safe-area-context:
         specifier: ^5.7.0
         version: 5.7.0(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
@@ -3581,6 +3584,11 @@ packages:
     resolution: {integrity: sha512-oH+s4U+IfZyg8J42bne2Skc90rcuESIYf86dYittcdWQtPfcaFXWpByPyTuWk3rR1Zz3Eh5HOrcVImfEhhJLng==}
     engines: {node: '>=20.19.4'}
 
+  metro-config-transformers@1.0.0:
+    resolution: {integrity: sha512-aF8bEBf9ocxWHpIbh95PGRTgk2C4gNM2scq/2uA87xl4vRoPr78AFz/bSh666FN3ak1LW3K5qkO5e6uolQeYYg==}
+    peerDependencies:
+      metro-config: '*'
+
   metro-config@0.83.3:
     resolution: {integrity: sha512-mTel7ipT0yNjKILIan04bkJkuCzUUkm2SeEaTads8VfEecCh+ltXchdq6DovXJqzQAXuR2P9cxZB47Lg4klriA==}
     engines: {node: '>=20.19.4'}
@@ -4040,6 +4048,25 @@ packages:
     peerDependencies:
       react: '*'
       react-native: '*'
+
+  react-native-grab@1.1.0:
+    resolution: {integrity: sha512-J1NBhR8TBO9YHQ9bM+bJ0YWQuoMPfUIKSZdjUjZbQasVh8CPJ4khkzNtCj6yugXxqkJABL5uks5aJrrwTmZTEw==}
+    peerDependencies:
+      '@react-navigation/native': '*'
+      expo-dev-menu: '*'
+      expo-router: '*'
+      react: '>=19'
+      react-native: '>=0.80'
+      react-native-screens: '*'
+    peerDependenciesMeta:
+      '@react-navigation/native':
+        optional: true
+      expo-dev-menu:
+        optional: true
+      expo-router:
+        optional: true
+      react-native-screens:
+        optional: true
 
   react-native-is-edge-to-edge@1.2.1:
     resolution: {integrity: sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q==}
@@ -8680,6 +8707,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  metro-config-transformers@1.0.0(metro-config@0.83.5):
+    dependencies:
+      metro-config: 0.83.5
+
   metro-config@0.83.3:
     dependencies:
       connect: 3.7.0
@@ -9313,6 +9344,19 @@ snapshots:
       invariant: 2.2.4
       react: 19.2.4
       react-native: 0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4)
+
+  react-native-grab@1.1.0(@react-navigation/native@7.1.33(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4))(expo-dev-menu@55.0.14(expo@55.0.6))(expo-router@55.0.5)(metro-config@0.83.5)(react-native-screens@4.23.0(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4))(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4):
+    dependencies:
+      metro-config-transformers: 1.0.0(metro-config@0.83.5)
+      react: 19.2.4
+      react-native: 0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4)
+    optionalDependencies:
+      '@react-navigation/native': 7.1.33(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
+      expo-dev-menu: 55.0.14(expo@55.0.6)
+      expo-router: 55.0.5(dd85c43db77fa4d1367469aa14b1fc51)
+      react-native-screens: 4.23.0(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
+    transitivePeerDependencies:
+      - metro-config
 
   react-native-is-edge-to-edge@1.2.1(react-native@0.83.2(@babel/core@7.29.0)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4):
     dependencies:
